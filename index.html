@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My X風ブログ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner container">
+      <div class="logo">X風ブログ</div>
+      <nav class="top-actions">
+        <button id="new-post-btn" class="btn primary">投稿</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="layout container">
+    <aside class="sidebar left">
+      <ul class="nav-list">
+        <li class="nav-item active">ホーム</li>
+        <li class="nav-item">探索</li>
+        <li class="nav-item">通知</li>
+        <li class="nav-item">メッセージ</li>
+      </ul>
+    </aside>
+
+    <section class="feed">
+      <div class="compose" id="compose">
+        <img class="avatar" src="https://i.pravatar.cc/40?img=3" alt="avatar">
+        <div class="compose-area">
+          <textarea id="compose-text" placeholder="いまどうしてる？（280文字まで）" maxlength="280"></textarea>
+          <div class="compose-footer">
+            <span id="char-count">280</span>
+            <div>
+              <button id="submit-post" class="btn primary">投稿</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="posts" class="posts">
+        <!-- 投稿がここに入る -->
+      </div>
+    </section>
+
+    <aside class="sidebar right">
+      <div class="trends card">
+        <h3>話題のトピック</h3>
+        <ul>
+          <li>#サンプル</li>
+          <li>#ブログ作成</li>
+          <li>#フロントエンド</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 My X風ブログ</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
